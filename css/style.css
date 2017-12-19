@@ -9,6 +9,9 @@ img{
     display: block;
 }
 
+.inactive{
+    overflow: hidden;
+}
 /*Personal-info*/
 
 .personal-info{
@@ -258,4 +261,88 @@ padding: 5px 10px 15px 10px;
     visibility: visible;
     animation-name: slide4;
     animation-duration: 2s;
+}
+
+/*Portfolio*/
+
+.news article{
+    background-color: white;
+}
+
+.news img{
+    display: block;
+    width: 100%;
+}
+
+.news figure{
+    margin: 0;
+}
+
+.news .bg{
+    padding: 15px 20px;
+    color: white;
+}
+
+/*MENU*/
+.personal-info{
+    position: relative;
+}
+
+.toggle-menu{
+    padding: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+.toggle-menu span{
+    display: block;
+    height: 2px;
+    background: #000;
+    margin-bottom: 3px;
+    width: 20px;
+}
+
+.toggle-menu span:last-of-type{
+    margin-bottom: 0;
+}
+
+.menu-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    left: -120%;
+    top: 0;
+    z-index: 20;
+    transition: 1s ease;
+}
+
+.menu.active{
+    left: 0;
+}
+
+.menu .side-menu{
+    height: 100vh;
+    background: #777;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.menu .side-menu a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
 }
