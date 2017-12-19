@@ -27,8 +27,8 @@ $(document).ready(function(){
     });
     
     
-    $('.menu-overlay').click(function(){
-        $(this).fadeOut();
+    $('.menu-overlay, .fa-close').click(function(){
+        $('.menu-overlay').fadeOut();
         $('.menu').removeClass('active');
         $('body').removeClass('inactive');
     });

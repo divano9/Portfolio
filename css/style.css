@@ -346,3 +346,15 @@ padding: 5px 10px 15px 10px;
     font-size: 20px;
     text-transform: uppercase;
 }
+
+.fa-close{
+    position: absolute;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    top: 0;
+    z-index: 20;
+    font-size: 30px;
+}
