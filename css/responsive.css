@@ -7,7 +7,9 @@
 
 @media(min-width:768px){
  
-    
+.experience{
+padding: 10px 20px 25px 20px;
+}  
     
 }
 
@@ -15,13 +17,36 @@
 
 
 @media(min-width:992px){
-   
+   *{
+    font-size: 16px;
+}
+.experience{
+padding: 20px 40px 50px 40px;
+}
     
     
 }
 
 @media(min-width:1200px){
    
+.experience{
+padding: 40px 60px 70px 60px;
+}
     
+}
+
+@media(min-width:1600px){
+   
+.experience{
+padding: 60px 80px 90px 80px;
+}
+    
+}
+
+@media(min-width:2000px){
+   
+    .experience{
+padding: 80px 100px 110px 100px;
+}
     
 }

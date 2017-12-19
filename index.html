@@ -13,7 +13,8 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <!--Font Awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/fa-svg-with-js.css" rel="stylesheet" type="text/css"/>
+        <script defer src="js/fontawesome-all.min.js"></script>
 
         <!--Style i responsive-->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -33,189 +34,248 @@
     <body>
 
 
-        <div class="container">
+        <div class="container background-g">
 
             <div class="row">
                 <!--Personal-->
-                <div class="col-4">
+                <div class="col-4 px-0">
                     <aside class="personal-info">
                         <figure class="personal-img">
                             <img src="img/example.jpg" alt="me"/>
-                            <h1>Dusan Ivanovic</h1>
-                            <h4>Front End Developer</h4>
+                            <div class="hover">
+                                <h1>Dusan Ivanovic</h1>
+                                <h4>Front End Developer</h4>
+                            </div>
                         </figure>
-                        <section class="about-me">
-                            <div class="row">
-                                <div class="col-3">
-                                    <article class="text-center">
-                                        <span class="fa fa-user-o"></span> 
-                                    </article>
+                        <div class="personal-info-text p-4">
+                            <section class="about-me">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <article class="text-center">
+                                            <span class="far fa-user"></span> 
+                                        </article>
+                                    </div>
+                                    <div class="col-9">
+                                        <article class="text-justify">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. 
+                                                Ut enim ad minim veniamnt in culpa quie officia deserunt mollit.
+                                            </p>
+                                        </article>
+                                    </div>
                                 </div>
-                                <div class="col-9">
-                                    <article class="text-justify pr-4">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. 
-                                            Ut enim ad minim veniamnt in culpa quie officia deserunt mollit.
-                                        </p>
-                                    </article>
+                            </section>
+                            <section class="phone">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <article class="text-center">
+                                            <span class="fa fa-phone"></span>
+                                        </article>
+                                    </div>
+                                    <div class="col-9">
+                                        <article>
+                                            <p class="lead">(880) 1737-662662</p>
+                                            <p class="pale mb-4">Personal</p>
+                                            <p class="lead">(880) 1737-662662</p>
+                                            <p class="pale">Work</p>
+                                        </article>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
-                        <section class="phone">
-                            <div class="row">
-                                <div class="col-3">
-                                    <article class="text-center">
-                                        <span class="fa fa-phone"></span>
-                                    </article>
+                            </section>
+                            <section class="email">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <article class="text-center">
+                                            <span class="fa fa-envelope"></span>
+                                        </article>
+                                    </div>
+                                    <div class="col-9">
+                                        <article>
+                                            <p class="lead"><a href="mailto:dusanivanovic@mail.com">dusanivanovic@mail.com</a></p>
+                                            <p class="pale mb-4">Personal</p>
+                                            <p class="lead"><a href="mailto:dusanivanovic@mail.com">dusanivanovic@mail.com</a></p>
+                                            <p class="pale">Work</p>
+                                        </article>
+                                    </div>
                                 </div>
-                                <div class="col-9">
-                                    <article>
-                                        <p class="lead">(880) 1737-662662</p>
-                                        <p class="pale">Personal</p>
-                                        <p class="lead">(880) 1737-662662</p>
-                                        <p class="pale">Work</p>
-                                    </article>
+                            </section>
+                            <section class="address">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <article class="text-center">
+                                            <span class="fa fa-map"></span>
+                                        </article>
+                                    </div>
+                                    <div class="col-9">
+                                        <article>
+                                            <address>
+                                                24 Golden Tower <sup class="pale">(2nd floor)</sup><br> 
+                                                Amberkhana, Sylhet
+                                            </address>
+                                            <p class="pale">SYL-3RF87W</p> 
+                                        </article>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
-                        <section class="email">
-                            <div class="row">
-                                <div class="col-3">
-                                    <article class="text-center">
-                                        <span class="fa fa-envelope"></span>
-                                    </article>
-                                </div>
-                                <div class="col-9">
-                                    <article>
-                                        <p class="lead"><a href="mailto:dusanivanovic@mail.com">dusanivanovic@mail.com</a></p>
-                                        <p class="pale">Personal</p>
-                                        <p class="lead"><a href="mailto:dusanivanovic@mail.com">dusanivanovic@mail.com</a></p>
-                                        <p class="pale">Work</p>
-                                    </article>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="address">
-                            <div class="row">
-                                <div class="col-3">
-                                    <article class="text-center">
-                                        <span class="fa fa-map"></span>
-                                    </article>
-                                </div>
-                                <div class="col-9">
-                                    <article>
-                                        <address>
-                                            24 Golden Tower <sup class="pale">(2nd floor)</sup><br> 
-                                            Amberkhana, Sylhet
-                                        </address>
-                                        <p class="pale">SYL-3RF87W</p> 
-                                    </article>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="skills">
-                            <div class="row">
-                                <div class="col-3">
-                                    <article class="text-center">
-                                        <span class="fa fa-tasks "></span>
-                                    </article>
-                                </div>
-                                <div class="col-9">
-                                    <article>
-                                        <h2>Professional Skills</h2>
-                                        <div>
-                                            <h4>Adobe Photoshop</h4>
+                            </section>
+                            <section class="skills">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <article class="text-center">
+                                            <span class="fa fa-tasks "></span>
+                                        </article>
+                                    </div>
+                                    <div class="col-9">
+                                        <article>
+                                            <h2>Professional Skills</h2>
                                             <div>
-                                                <div class="empty">
-                                                    <div class="full">
-                                                        <span class="dot"></span>
+                                                <h4>Adobe Photoshop</h4>
+                                                <div>
+                                                    <div class="empty">
+                                                        <div class="full">
+                                                            <span class="dot"></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div>
-                                            <h4>Adobe Illustrator</h4>
                                             <div>
-                                                <div class="empty">
-                                                    <div class="full">
-                                                        <span class="dot"></span>
+                                                <h4>Adobe Illustrator</h4>
+                                                <div>
+                                                    <div class="empty">
+                                                        <div class="full">
+                                                            <span class="dot"></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div>
-                                            <h4>HTML5 &amp; CSS3</h4>
                                             <div>
-                                                <div class="empty">
-                                                    <div class="full">
-                                                        <span class="dot"></span>
+                                                <h4>HTML5 &amp; CSS3</h4>
+                                                <div>
+                                                    <div class="empty">
+                                                        <div class="full">
+                                                            <span class="dot"></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div>
-                                            <h4>JavaScript</h4>
                                             <div>
-                                                <div class="empty">
-                                                    <div class="full">
-                                                        <span class="dot"></span>
+                                                <h4>JavaScript</h4>
+                                                <div>
+                                                    <div class="empty">
+                                                        <div class="full">
+                                                            <span class="dot"></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </article>
+                                        </article>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </section>
+                        </div>
                     </aside>
                 </div>
                 <!--Work and education-->
-                <div class="col-md-8">
-                    <section class="experience">
+                <div class="col-8 px-0">
+                    <section class="experience" style="background-color: #e3e3e3;">
                         <article class="work-exp">
-                            <span class="fa fa-briefcase"></span>
-                            <div>
-                                <h2>Work Experience</h2>
-                                <div class="exp">
-                                    <h4>UI & WEB DESIGNER @Academy</h4>
-                                    <a>JAN 2013 - DEC 2014</a>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    </p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <span class="fa fa-briefcase"></span>
+                                </div>
+                                <div class="col-10 px-0 square">
+                                    <div class="hr">
+                                        <h2>Work Experience</h2>
+                                        <h4>UI & WEB DESIGNER @Academy</h4>
+                                        <h5>JAN 2013 - DEC 2014</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
+                                    </div>
+                                     <div class="hr">
+                                        <h2>Work Experience</h2>
+                                        <h4>UI & WEB DESIGNER @Academy</h4>
+                                        <h5>JAN 2013 - DEC 2014</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
+                                    </div>
+                                     <div class="hr">
+                                        <h2>Work Experience</h2>
+                                        <h4>UI & WEB DESIGNER @Academy</h4>
+                                        <h5>JAN 2013 - DEC 2014</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </article>
                         <article class="education">
-                            <span class="fa fa-graduation-cap "></span>
-                            <div>
-                                <h2>Education</h2>
-                                <div class="edu">
-                                    <h4>Art & Multimedia @Lorem University</h4>
-                                    <a>JAN 2013 - DEC 2014</a>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    </p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <span class="fa fa-graduation-cap "></span>
+                                </div>
+                                <div class="col-10 px-0 square">
+                                    <div class="hr">
+                                        <h2>Education</h2>
+                                        <h4>Art & Multimedia @Lorem University</h4>
+                                        <h5>JAN 2013 - DEC 2014</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
+                                    </div>
+                                    <div class="hr">
+                                        <h2>Education</h2>
+                                        <h4>Art & Multimedia @Lorem University</h4>
+                                        <h5>JAN 2013 - DEC 2014</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
+                                    </div>
+                                    <div class="hr">
+                                        <h2>Education</h2>
+                                        <h4>Art & Multimedia @Lorem University</h4>
+                                        <h5>JAN 2013 - DEC 2014</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </article>
                         <article class="interests">
-                            <span class="fa fa-smile-o"></span>
-                            <div>
-                                <h2></h2>
-                                <div>
-                                    <span class="fa fa-music"></span>
-                                    <span class="fa fa-music"></span>
-                                    <span class="fa fa-music"></span>
-                                    <span class="fa fa-music"></span>
+                            <div class="row">
+                                <div class="col-2">
+                                    <span class="far fa-smile"></span>
+                                </div>
+                                <div class="col-10 px-0">
+                                    <h2>Interests</h2>
+                                    <div>
+                                        <span class="fa fa-music" title="Music"></span>
+                                        <span class="fa fa-music" title="Music"></span>
+                                        <span class="fa fa-music" title="Music"></span>
+                                        <span class="fa fa-music" title="Music"></span>
+                                        <span class="fa fa-music" title="Music"></span>
+                                    </div>
                                 </div>
                             </div>
                         </article>
                         <article class="links">
-                            <a href="www.alrayhan.com" target="_blank">www.alrayhan.com</a>
-                            <a href="dribbble.com/rtralrayhan" target="_blank">dribbble.com/rtralrayhan</a>
+                            <div class="row justify-content-around">
+                                <div class="col-4 text-right">
+                                    <a href="www.alrayhan.com" target="_blank">www.alrayhan.com</a>
+                                </div>
+                                <div class="col-5">
+                                    <a href="dribbble.com/rtralrayhan" target="_blank">dribbble.com/rtralrayhan</a>
+                                </div>
+                            </div>
                         </article>
                     </section>
                 </div>

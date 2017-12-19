@@ -1,12 +1,15 @@
-
+/*GLOBAL*/
 *{
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 img{
     max-width: 100%;
     display: block;
 }
+
+/*Personal-info*/
 
 .personal-info,
 .personal-info a{
@@ -17,4 +20,119 @@ img{
 .personal-info .pale{
     color: rgba(255,255,255,0.7);
     font-weight: lighter;
+}
+
+/*Novi font awesome 5*/
+.personal-info .svg-inline--fa{
+    font-size: 2.5em;
+}
+
+.personal-info .personal-img h4{
+    font-weight: lighter;
+    font-size: 1.3em;
+}
+
+.personal-info .personal-img{
+    position: relative;
+}
+
+.personal-info .personal-img .hover{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(20%);
+}
+
+.personal-info article{
+    margin: 35px 0;
+}
+
+.personal-info section{
+    position: relative;
+}
+
+
+.personal-info section::after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #0092d2;
+    position: absolute;
+    bottom: 0;
+    right: -7%;
+}
+
+.personal-info section:last-of-type:after{
+    content: none;
+}
+
+.personal-info p,
+.personal-info address{
+    margin-bottom: 0;
+}
+
+
+/*Experience*/
+
+.experience{
+padding: 5px 10px 15px 10px;
+}
+
+.experience article{
+    background-color: #fafbfc;
+    padding: 3rem 2rem 2rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 4px 2px 1px #c4c3c3;
+}
+
+.experience .svg-inline--fa {
+    color: #737373;
+    font-size: 2.5em;
+}
+
+.experience{
+    color: #636363;
+}
+
+.experience h5{
+    color: #69b2e2;
+}
+
+.experience .hr{
+   padding: 30px 0;
+    position: relative;
+}
+
+.experience .hr:after{
+    content: "";
+    width: 104%;
+    height: 1px;
+    background-color: #b9b7b7;
+    position: absolute;
+    bottom: 0;
+    right: -4%;
+}
+
+.experience .square .hr:last-of-type{
+    padding-bottom: 0;
+}
+
+.experience .square .hr:first-of-type{
+    padding-top: 0;
+}
+
+.experience .square .hr:last-of-type:after{
+    content: none;
+}
+
+.experience .interests h2{
+    margin-bottom: 40px;
+}
+
+.experience .interests .svg-inline--fa{
+    margin-right: 50px;
+    color: #38a4dd;
+}
+
+.experience .links{
+    padding: 20px 0;
 }
