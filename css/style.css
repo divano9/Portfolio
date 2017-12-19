@@ -11,6 +11,14 @@ img{
 
 /*Personal-info*/
 
+.personal-info{
+    height: 100%;
+}
+
+.personal-info-text{
+    padding: 0 1.5em;
+}
+
 .personal-info,
 .personal-info a{
     background-color: #38a4dd;
@@ -43,7 +51,7 @@ img{
 }
 
 .personal-info article{
-    margin: 35px 0;
+    margin: 50px 0;
 }
 
 .personal-info section{
@@ -70,6 +78,53 @@ img{
     margin-bottom: 0;
 }
 
+.personal-info .skills h2{
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+}
+
+.personal-info .skills h4{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+.personal-info .empty{
+    width: 95%;
+    height: 2px;
+    background-color: #1b87c9;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.personal-info .full{
+    height: 2px;
+    width: 85%;
+    background-color: rgba(255,255,255,0.8);
+    position: relative;
+}
+
+.personal-info .full2{
+    width: 70%;
+}
+
+.personal-info .full3{
+    width: 77%;
+}
+
+.personal-info .full4{
+    width: 63%;
+}
+
+.personal-info .dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: -2.5px;
+    top: -1.5px;;
+}
 
 /*Experience*/
 
@@ -135,4 +190,72 @@ padding: 5px 10px 15px 10px;
 
 .experience .links{
     padding: 20px 0;
+}
+
+
+/*ANIMACIJA SLIDERA*/
+.animation{
+    position: relative;
+    transition: 1s linear;
+    visibility: hidden;
+}
+
+@keyframes slide1{
+    0%{
+        width:0;
+    }
+    100%{
+        width:85%;
+    }
+}
+
+.slide1{
+    visibility: visible;
+    animation-name: slide1;
+    animation-duration: 2s;
+}
+
+@keyframes slide2{
+    0%{
+        width:0;
+    }
+    100%{
+        width:70%;
+    }
+}
+
+.slide2{
+    visibility: visible;
+    animation-name: slide2;
+    animation-duration: 2s;
+}
+
+@keyframes slide3{
+    0%{
+        width:0;
+    }
+    100%{
+        width:77%;
+    }
+}
+
+.slide3{
+    visibility: visible;
+    animation-name: slide3;
+    animation-duration: 2s;
+}
+
+@keyframes slide4{
+    0%{
+        width:0;
+    }
+    100%{
+        width:63%;
+    }
+}
+
+.slide4{
+    visibility: visible;
+    animation-name: slide4;
+    animation-duration: 2s;
 }
