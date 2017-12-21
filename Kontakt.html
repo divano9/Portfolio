@@ -13,8 +13,11 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <!--Font Awesome-->
-        <link href="css/fa-svg-with-js.css" rel="stylesheet" type="text/css"/>
-        <script defer src="js/fontawesome-all.min.js"></script>
+<!--        <link href="css/fa-svg-with-js.css" rel="stylesheet" type="text/css"/>
+        <script defer src="js/fontawesome-all.min.js"></script>-->
+
+<!--FONT AWESOME STARI-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--Style i responsive-->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -201,74 +204,115 @@
                     </aside>
                 </div>
                 <div class="col-8 px-0">
-                    <article>
-                        <div id="map_wrapper">
-                            <div id="map"></div>
+                    <section class="contact">
+                        <article class="gmap">
+                            <div id="map_wrapper">
+                                <div id="map"></div>
 
 
-                        </div>
+                            </div>
 
 
-                        <script>
+                            <script>
 
-                            // This example displays a marker at the center of Australia.
-                            // When the user clicks the marker, an info window opens.
+                                // This example displays a marker at the center of Australia.
+                                // When the user clicks the marker, an info window opens.
 
-                            function initMap() {
-                                var uluru1 = {lat: 44.777327, lng: 20.416269};
+                                function initMap() {
+                                    var uluru1 = {lat: 44.777327, lng: 20.416269};
 
-                                var map = new google.maps.Map(document.getElementById('map'), {
-                                    zoom: 16,
-                                    center: uluru1
-                                });
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 16,
+                                        center: uluru1
+                                    });
 
-                                var contentString1 = '<div id="content" class="text-center">' +
-                                        '<img  class="img-fluid" style="max-width:260px" src="img/example.jpg"></img>' +
-                                        '<div id="bodyContent">' +
-                                        '<h2 style="margin-top:10px">Dusan Ivanovic</h2>' +
-                                        '<p>Orfelinova 3a, 11030 Beograd</p>' +
-                                        '<p>Tel:064/999-99-99</p>' +
-                                        '</div>' +
-                                        '</div>';
-
-
-                                var infowindow1 = new google.maps.InfoWindow({
-                                    content: contentString1
-                                });
-
-                                var marker1 = new google.maps.Marker({
-                                    position: uluru1,
-                                    map: map,
-                                    title: 'Dusan Ivanovic',
-                                    animation: google.maps.Animation.DROP
-                                });
-                                marker1.addListener('click', function () {
-                                    infowindow1.open(map, marker1);
-                                });
-                                
-                                marker1.addListener('click', toggleBounce);
-
-                                
+                                    var contentString1 = '<div id="content" class="text-center">' +
+                                            '<img  class="img-fluid" style="max-width:200px" src="img/example.jpg"></img>' +
+                                            '<div id="bodyContent">' +
+                                            '<h2 style="margin-top:10px">Dusan Ivanovic</h2>' +
+                                            '<p>Orfelinova 3a, 11030 Beograd</p>' +
+                                            '<p>Tel:064/999-99-99</p>' +
+                                            '</div>' +
+                                            '</div>';
 
 
-                            }
-                            
-                            function toggleBounce() {
+                                    var infowindow1 = new google.maps.InfoWindow({
+                                        content: contentString1
+                                    });
+
+                                    var marker1 = new google.maps.Marker({
+                                        position: uluru1,
+                                        map: map,
+                                        title: 'Dusan Ivanovic',
+                                        animation: google.maps.Animation.DROP
+                                    });
+                                    marker1.addListener('click', function () {
+                                        infowindow1.open(map, marker1);
+                                    });
+
+                                    marker1.addListener('click', toggleBounce);
+
+
+
+
+                                }
+
+                                function toggleBounce() {
                                     if (marker1.getAnimation() !== null) {
                                         marker1.setAnimation(null);
                                     } else {
                                         marker1.setAnimation(google.maps.Animation.BOUNCE);
                                     }
-                                   }
-                        </script>
+                                }
+                            </script>
 
 
 
-                        <script async defer
-                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjrIeBetC1p7ptiWZ5H-HvW5h-XD_iRjU&callback=initMap&scrollwheel=false">
-                        </script>
+                            <script async defer
+                                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjrIeBetC1p7ptiWZ5H-HvW5h-XD_iRjU&callback=initMap&scrollwheel=false">
+                            </script>
 
-                    </article>
+                        </article>
+                        <article class="form">
+                            <h2 class=" mb-4">CONTACT</h2>
+                            <form method="post" action="" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" value="" name="name" class="form-control" placeholder="Your name">
+                                                <span class="input-group-addon fa fa-user"></span>
+                                            </div>
+                                            <div class="error"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" value="" name="email" class="form-control" placeholder="Your email">
+                                                <span class="input-group-addon fa fa-envelope"></span>
+                                            </div>
+                                            <div class="error"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">                                
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <textarea name="message" style="width: 100%; height: 100px;" placeholder="Your message" class="form-control"></textarea>
+                                                <span class="input-group-addon fa fa-comment-o"></span>
+                                            </div>
+                                            <div class="error"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <button type="submit" value="submit" name="submit" class="btn btn-dark">SUBMIT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </article>
+                    </section>
                 </div>
             </div>
 
@@ -282,7 +326,62 @@
         <script src="js/poper.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $(function () {
+                                        $(".contact-form").validate({
+                                            highlight: function (element) {
+                                                $(element).closest('.form-group').addClass("has-danger");
+                                                
+                                            },
+                                            unhighlight: function (element) {
+                                                $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                                                
+                                            },
+                                            rules: {
+                                                name: {
+                                                    required: true,
+                                                    rangelength: [3, 255]
+                                                },
+                                                email: {
+                                                    required: true,
+                                                    email: true
+                                                },
+                                                message: {
+                                                    required: true,
+                                                    rangelength: [10, 255]
+                                                }
+
+                                            },
+                                            messages: {
+                                                name: {
+                                                    required: "The *Name field is required!",
+                                                    rangelength: "The *Name must be between 3 and 255 characters!"
+                                                },
+                                                email: {
+                                                    required: "The *Email field is required!",
+                                                    email: "Please enter a valid email address!"
+                                                },
+                                                message: {
+                                                    required: "The *Message field is required!",
+                                                    rangelength: "The *Messafe must be between 10 and 255 characters!"
+                                                }
+                                            },
+                                            errorElement: 'p',
+                                            errorPlacement: function (error, element) {
+                                                error.appendTo($(element).closest('.form-group').find('.error'));
+                                            }
+
+                                        });
+                                    });
+                                });
+                                //Form Validation
+
+
+        </script>
     </body>
 
 </html>
