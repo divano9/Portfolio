@@ -92,7 +92,7 @@ img{
 }
 
 
-.personal-info .empty{
+.personal-info .bar{
     width: 95%;
     height: 2px;
     background-color: #1b87c9;
@@ -100,11 +100,14 @@ img{
     margin-top: 15px;
 }
 
-.personal-info .full{
+.personal-info .skills .bar .bar-progress{
+
     height: 2px;
-    width: 85%;
-    background-color: rgba(255,255,255,0.8);
+    background: #fff;
     position: relative;
+    transition: 1s linear;
+    width: 0;
+
 }
 
 .personal-info .full2{
@@ -131,9 +134,7 @@ img{
 
 /*Experience*/
 
-.experience{
-padding: 5px 10px 15px 10px;
-}
+
 
 .experience article{
     background-color: #fafbfc;
@@ -195,74 +196,6 @@ padding: 5px 10px 15px 10px;
     padding: 20px 0;
 }
 
-
-/*ANIMACIJA SLIDERA*/
-.animation{
-    position: relative;
-    transition: 1s linear;
-    visibility: hidden;
-}
-
-@keyframes slide1{
-    0%{
-        width:0;
-    }
-    100%{
-        width:85%;
-    }
-}
-
-.slide1{
-    visibility: visible;
-    animation-name: slide1;
-    animation-duration: 2s;
-}
-
-@keyframes slide2{
-    0%{
-        width:0;
-    }
-    100%{
-        width:70%;
-    }
-}
-
-.slide2{
-    visibility: visible;
-    animation-name: slide2;
-    animation-duration: 2s;
-}
-
-@keyframes slide3{
-    0%{
-        width:0;
-    }
-    100%{
-        width:77%;
-    }
-}
-
-.slide3{
-    visibility: visible;
-    animation-name: slide3;
-    animation-duration: 2s;
-}
-
-@keyframes slide4{
-    0%{
-        width:0;
-    }
-    100%{
-        width:63%;
-    }
-}
-
-.slide4{
-    visibility: visible;
-    animation-name: slide4;
-    animation-duration: 2s;
-}
-
 /*Portfolio*/
 
 .news article{
@@ -281,6 +214,10 @@ padding: 5px 10px 15px 10px;
 .news .bg{
     padding: 15px 20px;
     color: white;
+}
+
+.news .bg+p{
+    padding: 15px 20px;
 }
 
 /*MENU*/

@@ -1,24 +1,71 @@
 $(document).ready(function(){
     
-    //Animation
-     function animation() {
+    
+     //ANIMACIJE
+
+
+
+    function animation() {
+
         var windowHeight = $(window).height();
+
         var scroll = $(window).scrollTop();
+
         $('.animation').each(function () {
+
             var pozicija = $(this).offset().top;
+
             var animacija = $(this).attr('data-animation');
+
             if (pozicija < scroll + windowHeight - 100) {
+
                 $(this).addClass(animacija);
+
             }
+
         });
+
     }
 
+
+
+    function skill() {
+
+        var windowHeight = $(window).height();
+
+        var scroll = $(window).scrollTop();
+
+        $('.skill').each(function () {
+
+            var pozicija = $(this).offset().top;
+
+            var progres = $(this).attr('data-progress');
+
+            if (pozicija < scroll + windowHeight - 50) {
+
+                $(this).find('.bar-progress').css('width', progres + '%');
+
+            }
+
+        });
+
+    }
+
+    skill();
+
+
+
     animation();
+
     $(window).scroll(function () {
+
         animation();
+
+        skill();
+
     });
     
-    
+    //Meni
         
     $('.toggle-menu').click(function(){
         $('.menu-overlay').fadeIn();
