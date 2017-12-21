@@ -18,6 +18,7 @@
 
         <!--Style i responsive-->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/style2.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css" />
 
         <!--Fonts-->     
@@ -32,8 +33,8 @@
     </head>
 
     <body style="background-color: #e3e3e3;">
-        
-                <nav class="menu">
+
+        <nav class="menu">
             <ul class="side-menu list-unstyled">
                 <li>
                     <a href="#">Naslovna</a>
@@ -45,7 +46,7 @@
                     <a href="#">Letter</a>
                 </li>
             </ul>
-                    <span class="fa fa-close text-white"></span>
+            <span class="fa fa-close text-white"></span>
         </nav>
         <div class="menu-overlay"></div>
 
@@ -56,14 +57,14 @@
                 <!--Personal-->
                 <div class="col-4 px-0">
                     <aside class="personal-info">
-                        
+
                         <!--                        MENU-->
                         <div class="toggle-menu">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        
+
                         <figure class="personal-img m-0">
                             <img src="img/example.jpg" alt="me"/>
                             <div class="hover">
@@ -199,109 +200,75 @@
                         </div>
                     </aside>
                 </div>
-                <!--Work and education-->
                 <div class="col-8 px-0">
-                    <section class="experience">
-                        <article class="work-exp">
-                            <div class="row">
-                                <div class="col-2">
-                                    <span class="fa fa-briefcase"></span>
-                                </div>
-                                <div class="col-10 px-0 square">
-                                    <div class="hr">
-                                        <h2>Work Experience</h2>
-                                        <h4>UI & WEB DESIGNER @Academy</h4>
-                                        <h5>JAN 2013 - DEC 2014</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </p>
-                                    </div>
-                                     <div class="hr">
-                                        <h2>Work Experience</h2>
-                                        <h4>UI & WEB DESIGNER @Academy</h4>
-                                        <h5>JAN 2013 - DEC 2014</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </p>
-                                    </div>
-                                     <div class="hr">
-                                        <h2>Work Experience</h2>
-                                        <h4>UI & WEB DESIGNER @Academy</h4>
-                                        <h5>JAN 2013 - DEC 2014</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="education">
-                            <div class="row">
-                                <div class="col-2">
-                                    <span class="fa fa-graduation-cap "></span>
-                                </div>
-                                <div class="col-10 px-0 square">
-                                    <div class="hr">
-                                        <h2>Education</h2>
-                                        <h4>Art & Multimedia @Lorem University</h4>
-                                        <h5>JAN 2013 - DEC 2014</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </p>
-                                    </div>
-                                    <div class="hr">
-                                        <h2>Education</h2>
-                                        <h4>Art & Multimedia @Lorem University</h4>
-                                        <h5>JAN 2013 - DEC 2014</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </p>
-                                    </div>
-                                    <div class="hr">
-                                        <h2>Education</h2>
-                                        <h4>Art & Multimedia @Lorem University</h4>
-                                        <h5>JAN 2013 - DEC 2014</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="interests">
-                            <div class="row">
-                                <div class="col-2">
-                                    <span class="far fa-smile"></span>
-                                </div>
-                                <div class="col-10 px-0">
-                                    <h2>Interests</h2>
-                                    <div>
-                                        <span class="fa fa-music" title="Music"></span>
-                                        <span class="fa fa-music" title="Music"></span>
-                                        <span class="fa fa-music" title="Music"></span>
-                                        <span class="fa fa-music" title="Music"></span>
-                                        <span class="fa fa-music" title="Music"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="links">
-                            <div class="row justify-content-around">
-                                <div class="col-4 text-right">
-                                    <a href="www.alrayhan.com" target="_blank">www.alrayhan.com</a>
-                                </div>
-                                <div class="col-5">
-                                    <a href="dribbble.com/rtralrayhan" target="_blank">dribbble.com/rtralrayhan</a>
-                                </div>
-                            </div>
-                        </article>
-                    </section>
+                    <article>
+                        <div id="map_wrapper">
+                            <div id="map"></div>
+
+
+                        </div>
+
+
+                        <script>
+
+                            // This example displays a marker at the center of Australia.
+                            // When the user clicks the marker, an info window opens.
+
+                            function initMap() {
+                                var uluru1 = {lat: 44.777327, lng: 20.416269};
+
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 16,
+                                    center: uluru1
+                                });
+
+                                var contentString1 = '<div id="content" class="text-center">' +
+                                        '<img  class="img-fluid" style="max-width:260px" src="img/example.jpg"></img>' +
+                                        '<div id="bodyContent">' +
+                                        '<h2 style="margin-top:10px">Dusan Ivanovic</h2>' +
+                                        '<p>Orfelinova 3a, 11030 Beograd</p>' +
+                                        '<p>Tel:064/999-99-99</p>' +
+                                        '</div>' +
+                                        '</div>';
+
+
+                                var infowindow1 = new google.maps.InfoWindow({
+                                    content: contentString1
+                                });
+
+                                var marker1 = new google.maps.Marker({
+                                    position: uluru1,
+                                    map: map,
+                                    title: 'Dusan Ivanovic',
+                                    animation: google.maps.Animation.DROP
+                                });
+                                marker1.addListener('click', function () {
+                                    infowindow1.open(map, marker1);
+                                });
+                                
+                                marker1.addListener('click', toggleBounce);
+
+                                
+
+
+                            }
+                            
+                            function toggleBounce() {
+                                    if (marker1.getAnimation() !== null) {
+                                        marker1.setAnimation(null);
+                                    } else {
+                                        marker1.setAnimation(google.maps.Animation.BOUNCE);
+                                    }
+                                   }
+                        </script>
+
+
+
+                        <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjrIeBetC1p7ptiWZ5H-HvW5h-XD_iRjU&callback=initMap&scrollwheel=false">
+                        </script>
+
+                    </article>
                 </div>
             </div>
 
