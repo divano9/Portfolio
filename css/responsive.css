@@ -1,47 +1,65 @@
 
 @media(min-width:576px){
- 
-    .experience{
-padding-left: 10px;
-}
-    
+
+
 }
 
 @media(min-width:768px){
- 
-.experience{
-padding-left: 20px;
-}
+
+    .personal-info section::after {
+        right: -10%;
+    }  
+    .pf, .experience, .contact,  .cover-letter, .single{
+        padding-left: 30px;
+    }
+    .news, .experience, .contact, .cover-letter, .single{
+        margin-top: 0;
+    }
     
+
+    .gmap{
+
+        margin-bottom: 30px;
+    }
+
+    .experience article, .cover-letter article{
+        margin-bottom: 3rem;
+    }
+    .cover-letter .svg-inline--fa, .experience .svg-inline--fa, .personal-info .svg-inline--fa {
+        font-size: 2.5em;
+    } 
+
 }
 
 
 
 
 @media(min-width:992px){
-   *{
-    font-size: 16px;
-}
-.experience{
-padding-left: 30px;
-}
-    
-    
+    *{
+        font-size: 16px;
+    }
+
+    .experience .interests .svg-inline--fa{
+        margin-bottom: 0;
+    }
+    .personal-info section::after {
+        right: -9%;
+    }  
+
 }
 
 @media(min-width:1200px){
-   
 
-    
+    .personal-info section::after {
+        right: -7%;
+    }  
+
 }
 
 @media(min-width:1600px){
-   
+    .personal-info section::after {
+        right: -6%;
+    }  
 
-    
-}
 
-@media(min-width:2000px){
-
-    
 }

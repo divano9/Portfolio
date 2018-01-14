@@ -21,7 +21,6 @@
 
         <!--Style i responsive-->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <link href="css/style2.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css" />
 
         <!--Fonts-->     
@@ -58,16 +57,16 @@
 
             <div class="row">
                 <!--Personal-->
-                <div class="col-4 px-0">
+                <div class="col-md-4 px-0">
                     <aside class="personal-info">
-
+                        
                         <!--                        MENU-->
                         <div class="toggle-menu">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-
+                        
                         <figure class="personal-img m-0">
                             <img src="img/example.jpg" alt="me"/>
                             <div class="hover">
@@ -156,45 +155,37 @@
                                     <div class="col-9">
                                         <article>
                                             <h2>Professional Skills</h2>
-                                            <div>
+                                            <div class="skill" data-progress='85'>
                                                 <h4>Adobe Photoshop</h4>
-                                                <div>
-                                                    <div class="empty">
-                                                        <div class="full full1 animation" data-animation='slide1'>
+                                                    <div class="bar">
+                                                        <div class="bar-progress">
                                                             <span class="dot"></span>
                                                         </div>
-                                                    </div>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="skill" data-progress='70'>
                                                 <h4>Adobe Illustrator</h4>
-                                                <div>
-                                                    <div class="empty">
-                                                        <div class="full full2 animation" data-animation='slide2'>
+                                                    <div class="bar">
+                                                        <div class="bar-progress">
                                                             <span class="dot"></span>
                                                         </div>
                                                     </div>
-                                                </div>
                                             </div>
-                                            <div>
+                                            <div class="skill" data-progress='77'>
                                                 <h4>HTML5 &amp; CSS3</h4>
-                                                <div>
-                                                    <div class="empty">
-                                                        <div class="full full3 animation" data-animation='slide3'>
+                                                    <div class="bar">
+                                                        <div class="bar-progress">
                                                             <span class="dot"></span>
                                                         </div>
                                                     </div>
-                                                </div>
                                             </div>
-                                            <div>
+                                            <div class="skill" data-progress='69'>
                                                 <h4>JavaScript</h4>
-                                                <div>
-                                                    <div class="empty">
-                                                        <div class="full full4 animation" data-animation='slide4'>
+                                                    <div class="bar">
+                                                        <div class="bar-progress">
                                                             <span class="dot"></span>
                                                         </div>
                                                     </div>
-                                                </div>
                                             </div>
                                         </article>
                                     </div>
@@ -203,15 +194,14 @@
                         </div>
                     </aside>
                 </div>
-                <div class="col-8 px-0">
+                <!--Contact-->
+                <div class="col-md-8 px-0">
                     <section class="contact">
-                        <article class="gmap">
+                        <article class="gmap shadow">
                             <div id="map_wrapper">
                                 <div id="map"></div>
 
-
                             </div>
-
 
                             <script>
 
@@ -266,14 +256,12 @@
                                 }
                             </script>
 
-
-
                             <script async defer
                                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjrIeBetC1p7ptiWZ5H-HvW5h-XD_iRjU&callback=initMap&scrollwheel=false">
                             </script>
 
                         </article>
-                        <article class="form">
+                        <article class="form shadow">
                             <h2 class=" mb-4">CONTACT</h2>
                             <form method="post" action="" class="contact-form">
                                 <div class="row">
