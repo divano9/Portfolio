@@ -8,14 +8,16 @@
 
     .personal-info section::after {
         right: -10%;
-    }  
+    }
     .pf, .experience, .contact,  .cover-letter, .single{
         padding-left: 30px;
     }
     .news, .experience, .contact, .cover-letter, .single{
         margin-top: 0;
     }
-    
+
+
+
 
     .gmap{
 
@@ -27,7 +29,10 @@
     }
     .cover-letter .svg-inline--fa, .experience .svg-inline--fa, .personal-info .svg-inline--fa {
         font-size: 2.5em;
-    } 
+    }
+    .portfolio-pad {
+        padding: 20px 20px;
+    }
 
 }
 
@@ -44,7 +49,15 @@
     }
     .personal-info section::after {
         right: -9%;
-    }  
+    }
+
+    .personal-info .col-3,
+    .personal-info .col-9{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+
 
 }
 
@@ -52,14 +65,14 @@
 
     .personal-info section::after {
         right: -7%;
-    }  
+    }
 
 }
 
 @media(min-width:1600px){
     .personal-info section::after {
         right: -6%;
-    }  
+    }
 
 
 }
